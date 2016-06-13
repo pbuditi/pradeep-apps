@@ -1,26 +1,7 @@
 apply plugin: 'java'
-apply plugin: 'maven'
 
-group = 'com.apress.gradle.intro'
-archivesBaseName = 'sample-app'
-version = '1.0-SNAPSHOT'
+archivesBaseName = 'pradeep-app'
 
-uploadArchives {
-    repositories {
-        mavenDeployer {
-            repository (url: "http://localhost:8081/repository/maven-releases") {
-            authentication (userName: "admin", password: "admin123")
-            }
-            snapshotRepository (url: "http://localhost:8081/repository/maven-snapshots") {
-             authentication (userName: "admin", password: "admin123")
-            }
-        }
-    }
-}
-
-dependencies {
-    compile 'ch.qos.logback:logback-classic:1.1.2'
-}
 repositories {
     mavenCentral()
 }
