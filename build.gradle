@@ -1,7 +1,7 @@
 apply plugin: 'java'
 apply plugin: 'war'
 
-description = "Hello World Project"
+description = "Hello World Project Example"
 
 
 sourceCompatibility = 1.6
